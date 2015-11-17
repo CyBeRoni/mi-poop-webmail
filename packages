@@ -1,0 +1,19 @@
+# List packages to add to your image one per line.
+git
+haproxy
+nginx
+php56-fpm
+php56-pdo_sqlite
+php56-mcrypt
+php56-exif
+php56-json
+php56-dom
+php56-iconv
+php56-mbstring
+php56-intl
+php56-pear
+php56-pear-Auth_SASL
+php56-pear-Net_SMTP
+php56-pear-Net_IDNA2
+php56-pear-Mail_Mime
+php56-pear-Net_Sieve
