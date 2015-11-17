@@ -36,33 +36,33 @@ HAProxy is used for SSL rather than letting nginx do it; nginx requires configur
 Example JSON
 ------------
 
-{
-  "brand": "joyent",
-  "image_uuid": "",
-  "alias": "poopwebmail",
-  "hostname": "poopwebmail",
-  "max_physical_memory": 512,
-  "cpu_shares": 100,
-  "quota": 5,
-  "delegate_dataset": "true",
-  "nics": [
     {
-      "nic_tag": "admin",
-      "ips": ["1.2.3.4/24", "2001::1/64"],
-      "gateways": ["1.2.3.1"],
-      "primary": "true"
+      "brand": "joyent",
+      "image_uuid": "",
+      "alias": "poopwebmail",
+      "hostname": "poopwebmail",
+      "max_physical_memory": 512,
+      "cpu_shares": 100,
+      "quota": 5,
+      "delegate_dataset": "true",
+      "nics": [
+        {
+          "nic_tag": "admin",
+          "ips": ["1.2.3.4/24", "2001::1/64"],
+          "gateways": ["1.2.3.1"],
+          "primary": "true"
+        }
+      ],
+      "resolvers": [
+        "8.8.8.8",
+        "8.8.4.4"
+      ],
+      "customer_metadata": {
+        "system:ssh_disabled": "true",
+        "system:timezone": "Europe/Amsterdam",
+        "php:timezone": "Europe/Amsterdam",
+        "roundcube:product_name": "Poop Webmail",
+        "roundcube:imap_server": "mail.poop.nl",
+        "roundcube:qualify_domain": "cyberhq.nl"
+      }
     }
-  ],
-  "resolvers": [
-    "8.8.8.8",
-    "8.8.4.4"
-  ],
-  "customer_metadata": {
-    "system:ssh_disabled": "true",
-    "system:timezone": "Europe/Amsterdam",
-    "php:timezone": "Europe/Amsterdam",
-    "roundcube:product_name": "Poop Webmail",
-    "roundcube:imap_server": "mail.poop.nl",
-    "roundcube:qualify_domain": "cyberhq.nl"
-  }
-}
