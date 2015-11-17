@@ -11,12 +11,12 @@ Metadata
 ---------
 The following customer_metadata is used:
 
-roundcube:qualify_domain - Domain to use as the client's e-mail domain if the client presents none (default: none)
-roundcube:product_name - Minimal branding for roundcube (default: '<domain name> Webmail')
-roundcube:imap_server - IMAP server to connect to, TLS enabled. (Default: 'mail.<domain name>')
-php:timezone - Fed to the "date.timezone" setting of PHP (default: UTC)
-system:ssh_disabled - Whether or not to disable the ssh daemon (default: false)
-system:timezone - What timezone to use (no default)
+* roundcube:qualify_domain - Domain to use as the client's e-mail domain if the client presents none (default: none)
+* roundcube:product_name - Minimal branding for roundcube (default: '<domain name> Webmail')
+* roundcube:imap_server - IMAP server to connect to, TLS enabled. (Default: 'mail.<domain name>')
+* php:timezone - Fed to the "date.timezone" setting of PHP (default: UTC)
+* system:ssh_disabled - Whether or not to disable the ssh daemon (default: false)
+* system:timezone - What timezone to use (no default)
 
 Services
 --------
