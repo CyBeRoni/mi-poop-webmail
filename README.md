@@ -41,6 +41,7 @@ Example JSON
       "image_uuid": "",
       "alias": "poopwebmail",
       "hostname": "poopwebmail",
+      "dns_domain": "poop.nl",
       "max_physical_memory": 512,
       "cpu_shares": 100,
       "quota": 5,
