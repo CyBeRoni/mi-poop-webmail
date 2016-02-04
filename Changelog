@@ -5,3 +5,7 @@ poop-webmail-15.3.0
 
 poop-webmail-15.3.1
 - Add HSTS header
+
+poop-webmail-15.4.0
+- Build with base-64-lts 15.4.0
+- Use Roundcube 1.1.4
