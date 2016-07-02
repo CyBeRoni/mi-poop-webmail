@@ -3,7 +3,7 @@ mi-poop-webmail
 
 Please refer to https://github.com/joyent/mibe for use of this repo.
 
-Use with base-64 image from Joyent; tested with 15.3.0.
+Use with minimal-64 image from Joyent; tested with 16.1.0.
 
 When built, this image provides a Roundcube webmail client served by nginx with HAProxy for SSL. Enabled plugins are acl and managesieve.
 
