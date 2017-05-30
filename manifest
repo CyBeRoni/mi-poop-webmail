@@ -1,7 +1,7 @@
 name="poop-webmail"
 organization="Poop.nl"
 brand="Instance"
-version="16.1.0"
+version="17.1.0-2"
 description="Poop.nl webmail"
 homepage="http://www.poop.nl/"
 users="root"
