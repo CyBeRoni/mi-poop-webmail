@@ -9,10 +9,20 @@ set -o errexit
 
 # Configuring image specific packages
 echo "* Installing roundcube";
-git -C /opt/local clone -b 1.2.0 https://github.com/roundcube/roundcubemail.git roundcube
+git -C /opt/local clone -b 1.2.5 https://github.com/roundcube/roundcubemail.git roundcube
 
 mv /root/config.inc.php /opt/local/roundcube/config/config.inc.php
 mv /root/managesieve.config.inc.php /opt/local/roundcube/plugins/managesieve/config.inc.php
+
+
+# Get acmetool for Let's Encrypt certificates
+acmetool_version=v0.0.59
+curl -LO https://github.com/hlandau/acme/releases/download/${acmetool_version}/acmetool-${acmetool_version}-solaris_amd64.tar.gz && tar xvzf acmetool-${acmetool_version}-solaris_amd64.tar.gz
+cd acmetool-${acmetool_version}-solaris_amd64
+cp bin/acmetool /opt/local/bin/acmetool.real
+cd ..
+rm -rf acmetool-${acmetool_version}-solaris_amd64.tar.gz acmetool-${acmetool_version}-solaris_amd64
+
 
 # Clean up
 echo "* Cleaning up."
