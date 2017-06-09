@@ -9,3 +9,14 @@ poop-webmail-15.3.1
 poop-webmail-15.4.0
 - Build with base-64-lts 15.4.0
 - Use Roundcube 1.1.4
+
+poop-webmail-16.1.0
+- Build with minimal-64 16.1.0
+
+poop-webmail-17.1.0
+- Build with minimal-64 17.1.0
+- Use Let's Encrypt for TLS certs
+- Update to php7 7.1
+
+poop-webmail-17.1.1
+- Enable Enigma plugin for gpg

@@ -16,3 +16,4 @@ php71-pear-Net_SMTP
 php71-pear-Net_IDNA2
 php71-pear-Mail_Mime
 php71-pear-Net_Sieve
+php71-pear-Crypt_GPG
