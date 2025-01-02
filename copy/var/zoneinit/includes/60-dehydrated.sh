@@ -3,6 +3,7 @@
 
 test -d /srv/ssl/dehydrated || mkdir -p /srv/ssl/dehydrated
 test -d /srv/ssl/dehydrated/wellknown || mkdir /srv/ssl/dehydrated/wellknown
+test -d /srv/ssl/dehydrated/config.d || mkdir /srv/ssl/dehydrated/config.d
 
 test -d /srv/ssl/dehydrated/accounts || dehydrated --register --accept-terms
 
