@@ -7,7 +7,6 @@ php83-pdo_sqlite
 php83-curl
 php83-imagick
 php83-zip
-php83-pcre
 php83-mbstring
 php83-intl
 php83-exif
