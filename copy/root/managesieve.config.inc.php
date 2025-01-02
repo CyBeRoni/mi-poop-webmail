@@ -1,7 +1,6 @@
 <?php
 
-$config['managesieve_port'] = 4190;
-$config['managesieve_host'] = '%h';
+$config['managesieve_host'] = 'tls://%h:4190';
 $config['managesieve_usetls'] = true;
 $config['managesieve_script_name'] = 'default';
 $config['managesieve_mbox_encoding'] = 'UTF-8';
